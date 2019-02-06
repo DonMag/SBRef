@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="14460.31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="pz0-db-kpC">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="14460.20"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--Pin Input View Controller-->
+        <scene sceneID="WUx-a5-CbL">
+            <objects>
+                <viewController storyboardIdentifier="PinInputViewController" id="pz0-db-kpC" customClass="PinInputViewController" customModule="SBRef" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bmb-gu-Kur">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="PMp-dW-GAd">
+                                <rect key="frame" x="95.5" y="318.5" width="184" height="30"/>
+                                <color key="backgroundColor" red="0.92143100499999997" green="0.92145264149999995" blue="0.92144101860000005" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <state key="normal" title="Unwind (dismiss Login VC)"/>
+                                <connections>
+                                    <segue destination="oHy-F1-VAj" kind="unwind" unwindAction="unwindToRootViewControllerWithSegue:" id="nsD-Ex-prJ"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="0" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sYC-Tq-mFk">
+                                <rect key="frame" x="100" y="80" width="175.5" height="142.5"/>
+                                <string key="text">This is
+
+PinInputVIewController
+
+in
+
+Login.Storyboard</string>
+                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" red="0.99377379440000002" green="0.66803674020000003" blue="0.23860693550000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="PMp-dW-GAd" firstAttribute="centerX" secondItem="bmb-gu-Kur" secondAttribute="centerX" id="HX5-N2-jgG"/>
+                            <constraint firstItem="sYC-Tq-mFk" firstAttribute="centerX" secondItem="bmb-gu-Kur" secondAttribute="centerX" id="bsr-mE-4dc"/>
+                            <constraint firstItem="sYC-Tq-mFk" firstAttribute="top" secondItem="Via-hz-Ad1" secondAttribute="top" constant="60" id="yW4-3C-JS8"/>
+                            <constraint firstItem="PMp-dW-GAd" firstAttribute="centerY" secondItem="bmb-gu-Kur" secondAttribute="centerY" id="yvD-Ui-co0"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="Via-hz-Ad1"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DO5-CB-yN7" userLabel="First Responder" sceneMemberID="firstResponder"/>
+                <exit id="oHy-F1-VAj" userLabel="Exit" sceneMemberID="exit"/>
+            </objects>
+            <point key="canvasLocation" x="-196" y="92"/>
+        </scene>
+    </scenes>
+</document>
